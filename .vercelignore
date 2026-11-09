@@ -1,0 +1,11 @@
+# Files `vercel deploy` must not upload. Secrets go in the Vercel dashboard, never in the upload.
+.env
+.env.*
+!.env.example
+.claude
+.next
+node_modules
+*.tsbuildinfo
+*.log
+# Seed inputs (customer export, geocode cache): only used by local scripts.
+data
